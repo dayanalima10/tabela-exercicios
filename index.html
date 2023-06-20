@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<thead>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" id="linkEstilos">
+    
+    <title>Desafio de tabelas</title>
+    <table>
+        <thead>
+            <tr>
+                <td>Id do Funcionário</td>
+                <td>Nome do Funcionário</td>
+                <td>Cargo</td>
+                <td>Empresa</td>
+                <td>Email</td>
+                <td>Possui crachá?</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2331</td>
+                <td>Lucia Maria Silva</td>
+                <td>Auxilar Administrativo</td>
+                <td>Vivo</td>
+                <td>marial@gmail.com</td>
+                <td>sim</td>
+            </tr>
+            <tr>
+                <td>5232</td>
+                <td>Mara Santos Silva</td>
+                <td>Gerente</td>
+                <td>Vivo</td>
+                <td>marasantos@gmail.com</td>
+                <td>não</td>
+            </tr>
+            <tr>
+                <td>8954</td>
+                <td>Fabiana Lima</td>
+                <td>Logistica</td>
+                <td>Vivo</td>
+                <td>fl10@gmail.com</td>
+                <td>sim</td>
+            </tr>
+            <tr>
+                <td>4551</td>
+                <td>Monica Carvalho</td>
+                <td>Auxiliar de RH</td>
+                <td>Vivo</td>
+                <td>monivac@gmail.com</td>
+                <td>não</td>
+            </tr>
+            <tr>
+                <td>2338</td>
+                <td>Geraldo Gomes</td>
+                <td>Motorista</td>
+                <td>Vivo</td>
+                <td>geraldo@gmail.com</td>
+                <td>sim</td>
+            </tr>
+        </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Quantidade de funcionários</td>
+                    <td>5</td>
+                    </tr>
+            </tfoot>
+    </table>
+    
+        <button type="button" id="botao">Remover estilos</button>
+    
+        <script>
+            function toggleEstilos(){
+               const  linkEstilos = document.querySelector('#linkEstilos');
+               if(linkEstilos.hasAttribute('disabled')){
+                linkEstilos.removeAttribute('disabled');
+                botao.innerHTML = 'remover Estilos';
+
+               }else{
+                    linkEstilos.setAttribute('disabled','');
+                    botao.innerHTML = 'Aplicar Estilos';
+                    */botao.classList.add('nova classe');*/
+                }
+                              
+            }
+            
+            const botao = document.querySelector('#botao');
+            botao.addEventListener('click', toggleEstilos);
+            /*botao.innerHTML='novo texto do botao'*/
+        
+        </script>
+</thead>
+
+</html>
